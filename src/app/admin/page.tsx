@@ -32,8 +32,8 @@ export default function AdminPage() {
         fetch("/api/admin/letters"),
         fetch("/api/admin/emails"),
       ]);
-      const lettersData = await lettersRes.json();
-      const configsData = await configsRes.json();
+      const lettersData: any = await lettersRes.json();
+      const configsData: any = await configsRes.json();
 
       const letters = lettersData.letters || [];
       setStats({

@@ -27,7 +27,7 @@ export default function AnnouncementsPage() {
   const loadAnnouncements = async () => {
     try {
       const res = await fetch("/api/admin/announcements");
-      const data: { announcements?: Announcement[] } = await res.json();
+      const data: any = await res.json();
       setAnnouncements(data.announcements || []);
     } catch {
       // ignore
@@ -77,7 +77,7 @@ export default function AnnouncementsPage() {
       });
 
       if (!res.ok) {
-        const data: { error?: string } = await res.json();
+        const data: any = await res.json();
         setError(data.error || "保存失败");
         return;
       }

@@ -1,0 +1,200 @@
+
+> time-post-office@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.6s
+ ✓ Compiled /api/admin/login in 337ms (57 modules)
+ POST /api/admin/login 200 in 427ms
+ ✓ Compiled /src/middleware in 168ms (72 modules)
+ ○ Compiling /admin/login ...
+ ✓ Compiled /admin/login in 2.2s (541 modules)
+ ✓ Compiled / in 303ms (547 modules)
+ GET / 200 in 401ms
+ POST /api/admin/login 200 in 20ms
+ ✓ Compiled /admin/settings in 206ms (539 modules)
+ GET /admin/settings 200 in 262ms
+ POST /api/admin/login 200 in 20ms
+ ✓ Compiled /api/admin/password in 84ms (293 modules)
+ PUT /api/admin/password 200 in 122ms
+ POST /api/admin/login 200 in 12ms
+ GET /admin/settings 200 in 40ms
+ POST /api/admin/login 401 in 13ms
+   Reload env: .env.local
+ ✓ Compiled in 156ms (617 modules)
+ POST /api/admin/login 200 in 27ms
+ PUT /api/admin/password 200 in 14ms
+ POST /api/admin/login 200 in 15ms
+   Reload env: .env.local
+ ✓ Compiled in 128ms (617 modules)
+ GET /admin/login 200 in 62ms
+ GET /admin/login 200 in 31ms
+ POST /api/admin/login 200 in 10ms
+ GET /admin/login 200 in 17ms
+ POST /api/admin/login 200 in 12ms
+ ✓ Compiled /admin in 377ms (547 modules)
+ ✓ Compiled /api/admin/emails in 105ms (295 modules)
+ ✓ Compiled (298 modules)
+ GET /api/admin/emails 200 in 234ms
+ GET /api/admin/letters 200 in 239ms
+ GET /api/admin/emails 200 in 9ms
+ GET /api/admin/letters 200 in 14ms
+ ✓ Compiled /api/admin/templates in 115ms (300 modules)
+ ✓ Compiled (304 modules)
+ GET /api/admin/settings 200 in 280ms
+ GET /api/admin/templates 200 in 347ms
+ GET /api/admin/settings 200 in 12ms
+ GET /api/admin/templates 200 in 15ms
+ GET /api/admin/settings?keys=storage_provider,storage_r2_config,storage_cos_config,storage_oss_config,storage_kodo_config 200 in 9ms
+ ✓ Compiled /api/admin/settings/preview in 97ms (306 modules)
+ GET /api/admin/settings/preview?key=1 200 in 126ms
+ GET /api/admin/letters 200 in 15ms
+ GET /api/admin/emails 200 in 22ms
+ GET /api/admin/letters 200 in 15ms
+ GET /api/admin/emails 200 in 12ms
+ ✓ Compiled /admin/letters in 203ms (564 modules)
+ GET /api/admin/letters 200 in 32ms
+ GET /api/admin/letters 200 in 19ms
+ ✓ Compiled /admin/attachments in 199ms (570 modules)
+ ○ Compiling /api/admin/attachments ...
+ ✓ Compiled /api/admin/attachments in 1706ms (842 modules)
+ GET /api/admin/attachments?status=expired&page=1 200 in 2149ms
+ GET /api/admin/attachments?status=expiring&page=1 200 in 10ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 17ms
+ GET /api/admin/attachments?status=active&page=1 200 in 13ms
+ GET /api/admin/attachments?status=deleted&page=1 200 in 7ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 8ms
+ ✓ Compiled /admin/emails in 310ms (1106 modules)
+ GET /api/admin/emails 200 in 12ms
+ GET /api/admin/emails 200 in 20ms
+ GET /api/admin/settings 200 in 13ms
+ GET /api/admin/templates 200 in 21ms
+ GET /api/admin/settings 200 in 16ms
+ GET /api/admin/templates 200 in 12ms
+ GET /api/admin/emails 200 in 9ms
+ GET /api/admin/emails 200 in 9ms
+ GET /api/admin/letters 200 in 15ms
+ GET /api/admin/emails 200 in 19ms
+ GET /api/admin/letters 200 in 15ms
+ GET /api/admin/emails 200 in 13ms
+ GET /api/admin/letters 200 in 9ms
+ GET /api/admin/letters 200 in 8ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 13ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 10ms
+ GET /api/admin/emails 200 in 10ms
+ GET /api/admin/emails 200 in 7ms
+ GET /api/admin/settings 200 in 11ms
+ GET /api/admin/templates 200 in 17ms
+ GET /api/admin/settings 200 in 16ms
+ GET /api/admin/templates 200 in 14ms
+ GET /api/admin/emails 200 in 13ms
+ GET /api/admin/emails 200 in 8ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 12ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 9ms
+ GET /api/admin/letters 200 in 11ms
+ GET /api/admin/letters 200 in 8ms
+ GET /api/admin/letters 200 in 12ms
+ GET /api/admin/emails 200 in 20ms
+ GET /api/admin/letters 200 in 16ms
+ GET /api/admin/emails 200 in 13ms
+ GET /api/admin/letters 200 in 11ms
+ GET /api/admin/letters 200 in 11ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 11ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 8ms
+ GET /api/admin/letters 200 in 11ms
+ GET /api/admin/letters 200 in 8ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 10ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 8ms
+ GET /api/admin/attachments?status=expiring&page=1 200 in 8ms
+ GET /api/admin/attachments?status=active&page=1 200 in 9ms
+ GET /api/admin/attachments?status=deleted&page=1 200 in 11ms
+ GET /api/admin/attachments?status=active&page=1 200 in 8ms
+ GET /api/admin/attachments?status=expiring&page=1 200 in 8ms
+ GET /api/admin/attachments?status=expired&page=1 200 in 11ms
+ GET /api/admin/settings 200 in 16ms
+ GET /api/admin/templates 200 in 23ms
+ GET /api/admin/settings 200 in 18ms
+ GET /api/admin/templates 200 in 16ms
+ ✓ Compiled in 525ms (538 modules)
+ ✓ Compiled in 111ms (274 modules)
+ ✓ Compiled in 125ms (274 modules)
+ ✓ Compiled in 109ms (274 modules)
+ ✓ Compiled in 123ms (274 modules)
+ ✓ Compiled in 118ms (274 modules)
+ GET /admin/settings 200 in 59ms
+ ✓ Compiled /api/admin/templates in 329ms (298 modules)
+ ✓ Compiled (304 modules)
+ GET /api/admin/settings 200 in 520ms
+ GET /api/admin/templates 200 in 523ms
+ GET /api/admin/settings 200 in 14ms
+ GET /api/admin/templates 200 in 19ms
+ ✓ Compiled in 155ms (274 modules)
+ ✓ Compiled in 150ms (274 modules)
+ GET /api/admin/settings?keys=storage_provider,storage_r2_config,storage_cos_config,storage_oss_config,storage_kodo_config 200 in 9ms
+ ✓ Compiled in 202ms (274 modules)
+ ✓ Compiled in 420ms (610 modules)
+ ✓ Compiled in 154ms (274 modules)
+ ✓ Compiled in 611ms (538 modules)
+ ✓ Compiled /api/admin/templates in 104ms (298 modules)
+ ✓ Compiled (304 modules)
+ GET /api/admin/templates 200 in 442ms
+ GET /api/admin/settings 200 in 448ms
+ GET /api/admin/templates 200 in 14ms
+ GET /api/admin/settings 200 in 19ms
+ ✓ Compiled in 441ms (578 modules)
+ ✓ Compiled /api/admin/me in 80ms (299 modules)
+ GET /api/admin/me 200 in 109ms
+ ✓ Compiled in 402ms (538 modules)
+ ✓ Compiled in 118ms (274 modules)
+ ✓ Compiled in 152ms (347 modules)
+ ✓ Compiled in 130ms (274 modules)
+ ✓ Compiled in 159ms (274 modules)
+ ✓ Compiled in 499ms (538 modules)
+ ✓ Compiled /api/admin/templates in 474ms (538 modules)
+ ✓ Compiled in 1ms (304 modules)
+ GET /api/admin/settings 200 in 629ms
+ GET /api/admin/templates 200 in 634ms
+ GET /api/admin/settings 200 in 37ms
+ GET /api/admin/templates 200 in 21ms
+ ✓ Compiled in 506ms (538 modules)
+ ✓ Compiled in 136ms (274 modules)
+ GET /admin/settings 200 in 55ms
+ ✓ Compiled /api/admin/templates in 135ms (298 modules)
+ ✓ Compiled (304 modules)
+ GET /api/admin/templates 200 in 275ms
+ GET /api/admin/settings 200 in 277ms
+ GET /api/admin/templates 200 in 9ms
+ GET /api/admin/settings 200 in 13ms
+ ✓ Compiled /api/admin/me in 122ms (307 modules)
+ GET /api/admin/me 200 in 159ms
+ ✓ Compiled /api/admin/password in 316ms (309 modules)
+ PUT /api/admin/password 401 in 347ms
+ PUT /api/admin/password 200 in 10ms
+ GET /api/admin/me 200 in 8ms
+   Reload env: .env.local
+ ✓ Compiled in 250ms (648 modules)
+ ✓ Compiled /api/admin/login in 145ms (303 modules)
+ DELETE /api/admin/login 200 in 176ms
+ GET /admin/login 200 in 71ms
+ POST /api/admin/login 401 in 9ms
+ POST /api/admin/login 200 in 8ms
+ POST /api/admin/login 200 in 9ms
+ POST /api/admin/login 200 in 8ms
+ POST /api/admin/login 200 in 12ms
+ ✓ Compiled in 350ms (611 modules)
+ ✓ Compiled /api/admin/login in 73ms (295 modules)
+ POST /api/admin/login 200 in 129ms
+ GET /admin/login?from=%2Fadmin 200 in 55ms
+ POST /api/admin/login 200 in 10ms
+ ✓ Compiled /api/admin/emails in 382ms (301 modules)
+ ✓ Compiled (305 modules)
+ GET /api/admin/emails 200 in 582ms
+ GET /api/admin/letters 200 in 587ms
+ GET /api/admin/emails 200 in 15ms
+ GET /api/admin/letters 200 in 19ms
+ GET /api/admin/emails 200 in 11ms
+ GET /api/admin/emails 200 in 10ms

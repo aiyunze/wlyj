@@ -1,0 +1,32 @@
+name = "wlyj"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+pages_build_output_dir = ".vercel/output/static"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wlyj"
+database_id = "d637af39-10e6-4282-8d17-e84ed4321148"
+
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "wlyj"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "1220a670c29549f8af365ffd79df98fa"
+preview_id = "1220a670c29549f8af365ffd79df98fa"
+
+[env.production]
+name = "wlyj"
+
+[vars]
+ADMIN_USERNAME = "linlin"
+ADMIN_PASSWORD = "123123"
+CRON_API_KEY = ""
+NEXT_PUBLIC_SITE_URL = "https://wlyj.pages.dev"
+SITE_URL = "https://wlyj.pages.dev"
+
+[triggers]
+crons = ["0 * * * *"]

@@ -53,7 +53,7 @@ export default function AdminPage() {
     setCronResult("");
     try {
       const res = await fetch("/api/cron");
-      const data = await res.json();
+      const data: any = await res.json();
       setCronResult(
         `处理了 ${data.processed} 封信件：${data.results
           .map(

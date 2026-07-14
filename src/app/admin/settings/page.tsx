@@ -89,7 +89,7 @@ export default function SettingsPage() {
   const loadSettings = async () => {
     try {
       const res = await fetch("/api/admin/settings");
-      const data = await res.json();
+      const data: any = await res.json();
       if (data.settings) {
         setSettings({ ...defaultSettings, ...data.settings });
       }
@@ -160,7 +160,7 @@ export default function SettingsPage() {
     try {
       const res = await fetch("/api/admin/me");
       if (res.ok) {
-        const data = await res.json();
+        const data: any = await res.json();
         setAdminInfo(data.admin);
       }
     } catch {
@@ -172,7 +172,7 @@ export default function SettingsPage() {
     try {
       const res = await fetch("/api/admin/twofactor");
       if (res.ok) {
-        const data = await res.json();
+        const data: any = await res.json();
         setTwoFactorEnabled(data.enabled);
       }
     } catch {
@@ -219,7 +219,7 @@ export default function SettingsPage() {
           newPassword: nextEnabled ? twoFactorPassword : "",
         }),
       });
-      const data = await res.json();
+      const data: any = await res.json();
       if (res.ok) {
         setTwoFactorPassword("");
         setTwoFactorConfirmPassword("");
@@ -277,7 +277,7 @@ export default function SettingsPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
-      const data = await res.json();
+      const data: any = await res.json();
       if (res.ok) {
         setAccountMessage("账户信息修改成功，请重新登录");
         setAccountForm({ currentPassword: "", newUsername: "", newPassword: "", confirmPassword: "" });
@@ -304,7 +304,7 @@ export default function SettingsPage() {
   const loadCustomTemplates = async () => {
     try {
       const res = await fetch("/api/admin/templates");
-      const data = await res.json();
+      const data: any = await res.json();
       setCustomTemplates(data.templates || []);
     } catch (_e) {
       // ignore
@@ -332,7 +332,7 @@ export default function SettingsPage() {
         setCustomForm({ name: "", html: "" });
         loadCustomTemplates();
         if (!editingCustomId) {
-          const data = await res.json();
+          const data: any = await res.json();
           selectTemplate(data.id);
         }
       }
@@ -346,7 +346,7 @@ export default function SettingsPage() {
   const loadStorageConfig = async () => {
     try {
       const res = await fetch("/api/admin/settings?keys=storage_provider,storage_r2_config,storage_cos_config,storage_oss_config,storage_kodo_config");
-      const data = await res.json();
+      const data: any = await res.json();
       const settings = data.settings || {};
       const provider = settings.storage_provider || "r2";
       setStorageProvider(provider);
@@ -385,7 +385,7 @@ export default function SettingsPage() {
         setStorageMessage("存储配置已保存");
         setStorageEditingKey(false);
       } else {
-        const data = await res.json();
+        const data: any = await res.json();
         setStorageMessage(data.error || "保存失败");
       }
     } catch (_e) {
@@ -407,7 +407,7 @@ export default function SettingsPage() {
           config: storageConfig,
         }),
       });
-      const data = await res.json();
+      const data: any = await res.json();
       setStorageMessage(data.success ? "存储服务连接验证通过" : `验证失败: ${data.error || "未知错误"}`);
     } catch (_e) {
       setStorageMessage("验证请求失败");

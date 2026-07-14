@@ -42,7 +42,7 @@ export default function AttachmentsPage() {
   const fetchData = useCallback(async () => {
     setLoading(true);
     const res = await fetch(`/api/admin/attachments?status=${filter}&page=${page}`);
-    const data = await res.json();
+    const data: any = await res.json();
     setAttachments(data.attachments || []);
     setStats(data.stats || { active: 0, expiring: 0, expired: 0, pending_delete: 0, deleted: 0, total: 0 });
     setTotal(data.total || 0);

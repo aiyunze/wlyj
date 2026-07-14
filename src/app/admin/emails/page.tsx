@@ -50,7 +50,7 @@ export default function EmailsPage() {
   const loadConfigs = async () => {
     try {
       const res = await fetch("/api/admin/emails");
-      const data = await res.json();
+      const data: any = await res.json();
       setConfigs(data.configs || []);
     } catch {
       // ignore
@@ -111,7 +111,7 @@ export default function EmailsPage() {
       });
 
       if (!res.ok) {
-        const data = await res.json();
+        const data: any = await res.json();
         setError(data.error || "保存失败");
         return;
       }

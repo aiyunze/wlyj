@@ -50,7 +50,7 @@ export default function LettersPage() {
   const loadLetters = async () => {
     try {
       const res = await fetch("/api/admin/letters");
-      const data = await res.json();
+      const data: any = await res.json();
       setLetters(data.letters || []);
     } catch {
       // ignore
@@ -80,7 +80,7 @@ export default function LettersPage() {
     setLoadingAttachments(true);
     try {
       const res = await fetch(`/api/admin/attachments?status=active&page=1&letter_id=${letterId}`);
-      const data = await res.json();
+      const data: any = await res.json();
       const all = (data.attachments || []) as Attachment[];
       setAttachments(all.filter((a: Attachment) => a.status !== "deleted"));
     } catch {
@@ -101,7 +101,7 @@ export default function LettersPage() {
     if (!confirm("确定要重新发送这封信件吗？")) return;
     try {
       const res = await fetch(`/api/admin/letters/${id}/send`, { method: "POST" });
-      const data = await res.json();
+      const data: any = await res.json();
       if (res.ok) {
         alert("重新发送成功！");
         setSelected(null);

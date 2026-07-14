@@ -24,7 +24,7 @@ export default function PendingPage() {
   const loadLetters = async () => {
     try {
       const res = await fetch("/api/admin/letters");
-      const data = await res.json();
+      const data: any = await res.json();
       const all = (data.letters || []) as Letter[];
       setLetters(all.filter((l) => l.status === "pending").sort((a, b) => new Date(a.send_at).getTime() - new Date(b.send_at).getTime()));
     } catch {
@@ -54,7 +54,7 @@ export default function PendingPage() {
     setMessage("");
     try {
       const res = await fetch(`/api/admin/letters/${id}/send`, { method: "POST" });
-      const data = await res.json();
+      const data: any = await res.json();
       if (res.ok) {
         setMessage(`信件发送成功：${data.recipient}`);
         loadLetters();

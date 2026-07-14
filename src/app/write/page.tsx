@@ -59,10 +59,10 @@ export default function WritePage() {
     fd.append("type", type);
     const res = await fetch("/api/upload", { method: "POST", body: fd });
     if (!res.ok) {
-      const data = await res.json();
+      const data: any = await res.json();
       throw new Error(data.error || "上传失败");
     }
-    const data = await res.json();
+    const data: any = await res.json();
     return data;
   };
 
@@ -104,7 +104,7 @@ export default function WritePage() {
         body: JSON.stringify({ ...form, attachment_ids: attachmentIds, letter_type: letterType }),
       });
 
-      const data = await res.json();
+      const data: any = await res.json();
       if (!res.ok) {
         setError(data.error || "提交失败");
         return;
